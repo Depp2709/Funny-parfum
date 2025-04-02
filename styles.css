@@ -1,57 +1,79 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    width: 100%;
-    position: relative;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5dc; /* Krem */
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: #3b2f2f; /* Coklat tua */
     color: #fff;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
 }
 
 .products {
-    position: center;
-    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .product {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
-    width: 700px;
-    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .product img {
     max-width: 100%;
-    height: auto;
+    border-radius: 10px;
+}
+
+.product h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.product p {
+    margin-bottom: 20px;
+    color: #666;
 }
 
 button {
-    background: #28a745;
+    background: #3b2f2f; /* Coklat tua */
     color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #218838;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    font-size: 1em;
+    transition: background 0.
