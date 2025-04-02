@@ -66,6 +66,7 @@ main {
 .product p {
     margin-bottom: 20px;
     color: #666;
+    font-size: 1.8em;
 }
 
 button {
@@ -73,4 +74,5 @@ button {
     color: #fff;
     border: none;
     padding: 10px 15px;
-   
+    font-size: 1.8em;
+}
