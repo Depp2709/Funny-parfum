@@ -13,7 +13,6 @@ header {
 }
 
 .products {
-    display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
